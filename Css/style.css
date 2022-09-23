@@ -1,0 +1,114 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+/* Set Margin Padding 0px */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* site name */
+.site_name{
+    background-color: #cccccc;
+}
+.site_name h1{
+    padding: 1%;
+    font-size: 1.8rem;
+}
+/* site name */
+/* Nav Bar */
+.menu{
+    display: none;
+}
+.nav{
+    background-color: black;
+    position: sticky;
+}
+.nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav ul li{
+    float:left;
+    display: inline-block;
+    padding: 1%;
+    border-right: solid 1px white;
+}
+.nav ul li:hover{
+    background-color: #008c22;
+}
+/* NavBar Border After Contact Us */
+.nav ul li:nth-last-child(1){
+    border-right: solid 1px white;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+/* Nav Bar */
+/* Main Page */
+.main{
+    display: flex;
+}
+.main_page{
+    width: 70%;
+    padding: 2%;
+}
+.main_page h2{
+    font-size: 2rem;
+    color: #003d60;
+}
+.main_page p{
+    font-size: .8rem;
+}
+.aside{
+    right: 0%;
+    width: 30%;
+    padding: 2%;
+    background-color: #e0e0e0;
+    height: 72rem;
+}
+.aside h4{
+    font-size: 1rem;
+    color: #003d60;
+}
+.aside p{
+    font-size: .8rem;
+}
+/* Main Page */
+/* footer */
+.footer{
+    position: fixed;
+    background-color: #cccccc;
+    bottom:0%;
+    width: 100%;
+}
+.footer p{
+    padding: 1.5%;
+    font-size: .8rem;
+    text-align: right;
+}
+/* footer */
+@media screen and (max-width: 576px) {
+    .site_name h1{
+        text-align: center;
+    }
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        padding: 2%;
+        font-size: 1rem;
+        color: white;
+    }
+    .menu:focus .nav ul{
+            display: block;
+    }
+    .main_page p{
+        font-size: .7rem;
+    }
+    .aside p{
+        font-size: .7rem;
+    }
+  }
